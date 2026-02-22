@@ -19,7 +19,7 @@ router_info = {
 
 net_connect = ConnectHandler(**router_info)
 command = [
-    "no access-list 101", 
+    "no access-list 101",
     "no access-list 102",
     "no route-map SPLIT_TRAFFIC",
     "no ip local policy route-map SPLIT_TRAFFIC",
