@@ -11,7 +11,7 @@ router_info = {
     "device_type": "cisco_ios",
     "host": source_ip,
     "username": "admin",
-    "password": "cisco2"
+    "password": "cisco"
 }
 
 net_connect = ConnectHandler(**router_info)
