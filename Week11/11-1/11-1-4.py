@@ -16,5 +16,5 @@ for i, ip in enumerate(router_ip, 1):
     pswd = f"cisco{i}"
     command = [f"hostname {name}", f"enable password {pswd}"]
     net_connect.send_config_set(command)
-    print(f"--- {ip} Hostname and Password was change ---\n")
+    print(f"--- {ip} Hostname and Password was change ---\nHostname: {name}\nPassword: {pswd}\n")
     net_connect.disconnect()
